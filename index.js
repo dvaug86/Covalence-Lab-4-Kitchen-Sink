@@ -52,4 +52,4 @@ function getLength(_words){
 
         }
     }
-getLength('Hello World!')
+getLength('Hello World!');
