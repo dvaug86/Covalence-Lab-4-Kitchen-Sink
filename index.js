@@ -13,14 +13,6 @@ function sayHello() {
 };
 sayHello();
 
-/*let id =[
-    {name: 'Charles', age: 21}, 
-    {name: 'Abby', age: 27},
-    {name: 'James', age: 18},
-    {name: 'John' age: 17}
-];
-*/
-
 function checkAge(name, age){
     if(age < 21){
         alert("Sorry " + name + ", you aren't old enough to view this page!");
@@ -30,9 +22,34 @@ function checkAge(name, age){
 checkAge('Charles', 21);
 checkAge('Abby', 27);
 checkAge('James', 18);
-checkAge('John',17);
+checkAge('John', 17);
 
 favVeg = ['Broccoli', 'Lima Beans', 'peas', 'sweet potatoes', 'asparagus'];
 for(i=0; i<favVeg.length; i++){
     console.log(favVeg[i]);
 }
+
+let pet ={
+    name: 'Kruger',
+    breed: 'German Shepherd'
+}
+
+console.log(pet.name, pet.breed);
+
+homies =[{name: 'Bertha', age: 66}, {name: 'Mae', age: 1}, {name: 'Michael', age: 5}, {name: 'Loyd', age: 42}, {name: 'Juan', age: 35}];
+
+for(i=0; i<homies.length; i++){
+    checkAge(homies[i].name, homies[i].age);
+}
+
+function getLength(_words){
+    length=(_words.length);
+        if(length % 2 ==0){
+            alert('The world is nice and even!')
+        }
+        else{
+            alert('The world is an odd place!')
+
+        }
+    }
+getLength('Hello World!')
